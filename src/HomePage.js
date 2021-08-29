@@ -12,10 +12,10 @@ const HomePage = () => {
   const [players, setPlayers] = useState([]);
   const signIn = () => {
     signInWithPopup(auth, provider).catch(alert);
-    if (user) {
-      history.push("/puzzle");
-    }
   };
+  if (user) {
+    history.push("/puzzle");
+  }
 
   useEffect(() => {
     const q = query(collection(db, "players"), orderBy("time", "asc"));

@@ -71,8 +71,8 @@ const Game = ({ setPlayerInfo }) => {
           <div className="pb-10">
             <JigsawPuzzle
               imageSrc="https://images.pexels.com/photos/7205612/pexels-photo-7205612.jpeg"
-              rows={2}
-              columns={2}
+              rows={5}
+              columns={5}
               onSolved={solved}
             />
           </div>

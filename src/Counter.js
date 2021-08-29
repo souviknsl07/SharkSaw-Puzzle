@@ -1,15 +1,8 @@
 import { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
 import { auth } from "./Firebase";
 
 const Counter = ({ isActive, minute, second, setSecond, setMinute }) => {
   const [counter, setCounter] = useState(0);
-  const history = useHistory();
-
-  const signOut = () => {
-    auth.signOut();
-    // history.replace("/");
-  };
 
   useEffect(() => {
     let intervalId;
@@ -46,7 +39,7 @@ const Counter = ({ isActive, minute, second, setSecond, setMinute }) => {
       </div>
       <div className="buttons mr-5">
         <button
-          onClick={signOut}
+          onClick={() => auth.signOut()}
           className="p-3 font-medium border-none focus:outline-none bg-blue-200 hover:bg-blue-300 rounded-md text-sm items-center flex"
         >
           Quit
