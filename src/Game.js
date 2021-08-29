@@ -15,12 +15,17 @@ const Game = ({ setPlayerInfo }) => {
     setIsActive(!isActive);
     setDoc(
       doc(db, "players", user.uid),
-      { minute: minute, second: second },
+      {
+        time: Number(minute) + Number(second),
+        minute: minute,
+        second: second,
+      },
       { merge: true }
     );
 
     await setDoc(doc(db, "players", user.uid), {
       name: user.displayName,
+      time: Number(minute) + Number(second),
       minute: minute,
       second: second,
     });
