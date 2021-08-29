@@ -52,7 +52,7 @@ const Game = ({ setPlayerInfo }) => {
             Solved Image
           </h1>
         </div>
-        <div className="mr-5">
+        <div className="sm:mr-5">
           <h4 className="md:text-lg mb-2 font-bold">{user.displayName}</h4>
           <Counter
             isActive={isActive}
@@ -68,10 +68,10 @@ const Game = ({ setPlayerInfo }) => {
       <hr />
       <div className={!isActive && "grid place-items-center mt-48"}>
         {isActive ? (
-          <div className="mb-5">
+          <div className="sm:mb-5">
             <JigsawPuzzle
               imageSrc="https://images.pexels.com/photos/7205612/pexels-photo-7205612.jpeg"
-              rows={5}
+              rows={4}
               columns={5}
               onSolved={solved}
             />
