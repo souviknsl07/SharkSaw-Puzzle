@@ -1,5 +1,5 @@
 # SharkSaw Puzzle
-A JigSaw Puzzle Game with sharky feeling.
+A JigSaw Puzzle Game with a sharky feeling.
 
 ![Screenshot (21)](https://user-images.githubusercontent.com/53038576/131250455-4b201530-c212-4cab-9ccb-9242fb74f878.png)
 ![Screenshot (22)](https://user-images.githubusercontent.com/53038576/131250460-5b67f55b-d543-4d6b-9e39-f5355379875a.png)
