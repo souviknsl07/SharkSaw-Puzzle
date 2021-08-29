@@ -1,9 +1,9 @@
-import Game from "./Game";
-import HomePage from "./HomePage";
+import Game from "./pages/Game";
+import HomePage from "./pages/HomePage";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./Firebase";
-import Loading from "./Loading";
+import Loading from "./components/Loading";
 
 function App() {
   const [user, loading] = useAuthState(auth);

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { JigsawPuzzle } from "react-jigsaw-puzzle";
-import Counter from "./Counter";
-import { auth, db } from "./Firebase";
+import Counter from "../components/Counter";
+import { auth, db } from "../Firebase";
 import { setDoc, doc } from "firebase/firestore";
 
 const Game = ({ setPlayerInfo }) => {
@@ -68,7 +68,7 @@ const Game = ({ setPlayerInfo }) => {
       <hr />
       <div className={!isActive && "grid place-items-center mt-48"}>
         {isActive ? (
-          <div className="pb-10">
+          <div className="mb-5">
             <JigsawPuzzle
               imageSrc="https://images.pexels.com/photos/7205612/pexels-photo-7205612.jpeg"
               rows={5}

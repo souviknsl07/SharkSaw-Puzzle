@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { auth } from "./Firebase";
+import { auth } from "../Firebase";
 
 const Counter = ({ isActive, minute, second, setSecond, setMinute }) => {
   const [counter, setCounter] = useState(0);
@@ -50,4 +50,4 @@ const Counter = ({ isActive, minute, second, setSecond, setMinute }) => {
 };
 
 export default Counter;
-//reffered -> https://dev.to/emmaadesile/build-a-timer-using-react-hooks-3he2
+//referred -> https://dev.to/emmaadesile/build-a-timer-using-react-hooks-3he2

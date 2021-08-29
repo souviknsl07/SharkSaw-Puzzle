@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Sound from "react-sound";
-import babyShark from "./baby-shark.mp3";
+import babyShark from "../utils/baby-shark.mp3";
 
 const Music = ({
   handleSongLoading,
@@ -20,9 +20,9 @@ const Music = ({
       />
       <button onClick={() => setIsPlaying(!isPlaying)}>
         {!isPlaying ? (
-          <img src="no-sound.png" height="30" width="30" alt="no-sound" />
+          <img src="no-sound.png" height="20" width="20" alt="no-sound" />
         ) : (
-          <img src="sound.png" height="30" width="30" alt="sound" />
+          <img src="sound.png" height="20" width="20" alt="sound" />
         )}
       </button>
     </div>

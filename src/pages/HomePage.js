@@ -1,10 +1,10 @@
-import Dashboard from "./Dashboard";
-import { auth, provider, signInWithPopup, db } from "./Firebase";
+import Dashboard from "../components/Dashboard";
+import { auth, provider, signInWithPopup, db } from "../Firebase";
 import { useHistory } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useEffect, useState } from "react";
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
-import Music from "./Music";
+import Music from "../components/Music";
 
 const HomePage = () => {
   const history = useHistory();
@@ -34,7 +34,7 @@ const HomePage = () => {
   return (
     <div className="bg-shark bg-cover bg-center min-h-full min-w-full w-screen h-screen grid place-items-center text-center bg-opacity-50">
       <div className="flex  items-center mt-10">
-        <p className="text-3xl font-extrabold text-red-700">
+        <p className="text-3xl mr-2 font-extrabold text-red-700">
           Welcome to SharkSaw Puzzle
         </p>
         <Music />
