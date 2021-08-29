@@ -29,6 +29,8 @@ const Game = ({ setPlayerInfo }) => {
       minute: minute,
       second: second,
     });
+
+    auth.signOut();
   };
 
   return (
