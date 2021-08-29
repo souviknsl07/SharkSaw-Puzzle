@@ -20,9 +20,9 @@ const Music = ({
       />
       <button onClick={() => setIsPlaying(!isPlaying)}>
         {!isPlaying ? (
-          <img src="no-sound.png" height="30" width="30" />
+          <img src="no-sound.png" height="30" width="30" alt="no-sound" />
         ) : (
-          <img src="sound.png" height="30" width="30" />
+          <img src="sound.png" height="30" width="30" alt="sound" />
         )}
       </button>
     </div>
