@@ -1,9 +1,12 @@
 # SharkSaw Puzzle
 ![React](https://img.shields.io/badge/react-v17-blue)
-![Tailwind](https://img.shields.io/badge/tailwindcss-v2-lightgreen)
-![Firebase](https://img.shields.io/badge/firebase-v8-yellow)
+![Tailwind](https://img.shields.io/badge/tailwindcss-v3-lightgreen)
+![Firebase](https://img.shields.io/badge/firebase-v9-yellow)
 
 This is a jig-saw puzzle game with a shark theme developed using Reactjs, Firebase, Tailwind CSS, etc.
+## Watch it Live
+[sharksaw.netlify.app](https://sharksaw.netlify.app)
+
 
 ![Screenshot (21)](https://user-images.githubusercontent.com/53038576/131250455-4b201530-c212-4cab-9ccb-9242fb74f878.png)
 ![Screenshot (22)](https://user-images.githubusercontent.com/53038576/131250460-5b67f55b-d543-4d6b-9e39-f5355379875a.png)
